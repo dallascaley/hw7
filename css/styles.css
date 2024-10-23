@@ -1,0 +1,48 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+  font-style: italic;
+}
+
+label {
+  font-weight: bold;
+  margin-right: .5em;
+  font-style: normal;
+}
+
+button {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.answer {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+/* Add spacing between each country suggestion */
+.suggestion {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* Change suggestion color when hovering it with the mouse */
+.suggestion:hover {
+  background-color: #adf;
+  cursor: pointer;
+}
+
+/* Position the suggestion list just below the input box */
+#suggestions {
+  position: absolute;
+  border: 1px solid black;
+  left: 155px;
+}
+
+/* This one is so you don't get an annoying black dot when there are no suggestions */
+#suggestions:not(:has(div)) {
+  border: none;
+}
+
